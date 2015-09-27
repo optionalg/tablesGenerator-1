@@ -10,16 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var tableNumber: UITextField!
+    
+    @IBOutlet var TableRange: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let tableView = segue.destinationViewController as? TableViewController
+        
+        if tableNumber.text != "" && TableRange.text != ""
+        {
+            tableView?.number = Int(NSNumberFormatter().numberFromString(tableNumber.text!)!.intValue)
+            
+            tableView?.range = Int(NSNumberFormatter().numberFromString(TableRange.text!)!.intValue)
+        }
+        
+        
+        
     }
-
 
 }
 

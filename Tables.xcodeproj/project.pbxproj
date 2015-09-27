@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40C8E6091BB8386700DF057E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C8E6081BB8386700DF057E /* TableViewController.swift */; };
 		40DF4A571BB8260700521868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DF4A561BB8260700521868 /* AppDelegate.swift */; };
 		40DF4A591BB8260700521868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DF4A581BB8260700521868 /* ViewController.swift */; };
 		40DF4A5C1BB8260700521868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DF4A5A1BB8260700521868 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40C8E6081BB8386700DF057E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		40DF4A511BB8260700521868 /* Tables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DF4A551BB8260700521868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40DF4A561BB8260700521868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				40DF4A561BB8260700521868 /* AppDelegate.swift */,
 				40DF4A581BB8260700521868 /* ViewController.swift */,
+				40C8E6081BB8386700DF057E /* TableViewController.swift */,
 				40DF4A5A1BB8260700521868 /* Main.storyboard */,
 				40DF4A5D1BB8260700521868 /* Images.xcassets */,
 				40DF4A5F1BB8260700521868 /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40DF4A591BB8260700521868 /* ViewController.swift in Sources */,
+				40C8E6091BB8386700DF057E /* TableViewController.swift in Sources */,
 				40DF4A571BB8260700521868 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +409,7 @@
 				40DF4A721BB8260700521868 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40DF4A731BB8260700521868 /* Build configuration list for PBXNativeTarget "TablesTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				40DF4A751BB8260700521868 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
