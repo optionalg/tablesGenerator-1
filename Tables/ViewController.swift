@@ -14,13 +14,15 @@ class ViewController: UIViewController {
     
     @IBOutlet var TableRange: UITextField!
     
+    @IBOutlet var messageLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+                
         let tableView = segue.destinationViewController as? TableViewController
         
         if tableNumber.text != "" && TableRange.text != ""
@@ -28,6 +30,10 @@ class ViewController: UIViewController {
             tableView?.number = Int(NSNumberFormatter().numberFromString(tableNumber.text!)!.intValue)
             
             tableView?.range = Int(NSNumberFormatter().numberFromString(TableRange.text!)!.intValue)
+        }
+        else
+        {
+            messageLabel.text = "Enter number in both the fields"
         }
         
         

@@ -27,18 +27,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Number :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfU-u6-haZ">
-                                <rect key="frame" x="16" y="110" width="117" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Range :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOE-d5-PVY">
-                                <rect key="frame" x="16" y="177" width="105" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAe-L9-5CD">
                                 <rect key="frame" x="141" y="229" width="96" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,9 +44,27 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="9iW-Li-ZlT" kind="show" id="rup-Sa-mGn"/>
+                                    <segue destination="9iW-Li-ZlT" kind="show" identifier="tableData" id="rup-Sa-mGn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Number :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfU-u6-haZ">
+                                <rect key="frame" x="16" y="110" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Range :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOE-d5-PVY">
+                                <rect key="frame" x="16" y="177" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca9-aG-RSj">
+                                <rect key="frame" x="279" y="340" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -66,10 +72,12 @@
                             <constraint firstAttribute="trailing" secondItem="ZBd-uy-THs" secondAttribute="trailing" constant="16" id="C8S-lg-yWl"/>
                             <constraint firstItem="UAe-L9-5CD" firstAttribute="top" secondItem="UWz-4Y-x7u" secondAttribute="bottom" constant="31" id="FPY-xK-BVl"/>
                             <constraint firstItem="kOE-d5-PVY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="MG7-9D-Sig"/>
+                            <constraint firstItem="ca9-aG-RSj" firstAttribute="top" secondItem="UAe-L9-5CD" secondAttribute="bottom" constant="81" id="PZO-Rn-lR2"/>
                             <constraint firstItem="HfU-u6-haZ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="110" id="UGe-dS-a6K"/>
                             <constraint firstItem="UAe-L9-5CD" firstAttribute="leading" secondItem="ZBd-uy-THs" secondAttribute="leading" id="WZ6-d1-luu"/>
                             <constraint firstItem="UWz-4Y-x7u" firstAttribute="top" secondItem="ZBd-uy-THs" secondAttribute="bottom" constant="37" id="dov-Cf-uzQ"/>
                             <constraint firstAttribute="trailing" secondItem="UWz-4Y-x7u" secondAttribute="trailing" constant="16" id="eyw-Gi-SLB"/>
+                            <constraint firstAttribute="centerX" secondItem="ca9-aG-RSj" secondAttribute="centerX" id="lCe-ar-LhT"/>
                             <constraint firstItem="UAe-L9-5CD" firstAttribute="leading" secondItem="UWz-4Y-x7u" secondAttribute="leading" id="mlr-ic-eja"/>
                             <constraint firstItem="ZBd-uy-THs" firstAttribute="leading" secondItem="HfU-u6-haZ" secondAttribute="trailing" constant="8" id="pDx-Yo-1RK"/>
                             <constraint firstItem="kOE-d5-PVY" firstAttribute="top" secondItem="HfU-u6-haZ" secondAttribute="bottom" constant="46" id="ulH-yA-klW"/>
@@ -79,6 +87,7 @@
                     <navigationItem key="navigationItem" title="Tables" id="Iwo-w5-rMt"/>
                     <connections>
                         <outlet property="TableRange" destination="UWz-4Y-x7u" id="8mZ-4z-lOc"/>
+                        <outlet property="messageLabel" destination="ca9-aG-RSj" id="Vow-Vi-0v9"/>
                         <outlet property="tableNumber" destination="ZBd-uy-THs" id="QDc-br-a5z"/>
                     </connections>
                 </viewController>
